@@ -1,3 +1,10 @@
 body {
- background: blue;   
+background: #020289;
+    color: white;
+}
+
+td {    
+height: 100px;
+width: 100px;
+border: solid 1px white;
 }
