@@ -13,16 +13,16 @@ button.addEventListener("click", function() {
     //hämtar alla td
     var rutor = document.getElementsByTagName("td");
     
-    for(var i = 0; i<5 ; i++){
-       rutor[i].innerHTML = anvandarOrd[i];    
+    for(var i = 0; i < 5 ; i++){
+       rutor[i].innerHTML = anvandarOrd[i];
+        
+      if (anvandarOrd[i] == valtOrd[i]){
+          rutor[i].style.background = "green";
+      }  
+      else{
+          rutor[i].style.background = "red";
+      }    
     }
        
-    if(valtOrd === anvandarOrd)
-    {
-        alert("Grattis!");    
-    }
-    else
-    {
-        alert("OBS! Försök igen!"); 
-    }
+    
 });

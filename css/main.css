@@ -4,12 +4,15 @@ color: white;
 text-align: center;    
 }
 
-tr {
+table {
 width: 500px;    
 margin: 0 auto;
+margin-top: 100px;    
 }
 
-td {  
+td { 
+text-align: center; 
+font-size: 20px;    
 height: 100px;
 width: 100px;
 border: solid 1px white;
