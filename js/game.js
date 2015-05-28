@@ -27,8 +27,9 @@ button.addEventListener("click", function() {
 //console.log(valtOrd);   
     
     if(valtOrd === anvandarOrd) {
-        alert("Du vann! " + point);
         point += 5000;
+        alert("Du vann! " + point);
+        
     }
 });
 
