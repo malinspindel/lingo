@@ -8,8 +8,8 @@ console.log(valtOrd);
 var button = document.getElementsByTagName("button")[0]; 
 //binda till knappen
 button.addEventListener("click", function() {
-  var anvandarOrd = document.getElementsByTagName("input")[0].value;
-    
+    //hämtar inputen
+    var anvandarOrd = document.getElementsByTagName("input")[0].value;
     //hämtar alla td
     var rutor = document.getElementsByTagName("td");
     
@@ -17,12 +17,14 @@ button.addEventListener("click", function() {
        rutor[i].innerHTML = anvandarOrd[i];
         
       if (anvandarOrd[i] == valtOrd[i]){
-          rutor[i].style.background = "green";
+        rutor[i].style.background = "green";
       }  
-      else{
-          rutor[i].style.background = "red";
+      else {
+        rutor[i].style.background = "red";
       }    
     }
-       
-    
+//console.log(anvandarOrd);
+//console.log(valtOrd);    
 });
+
+
