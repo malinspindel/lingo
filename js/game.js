@@ -2,7 +2,7 @@
 var ordlista =["mjauu","malin","banan"];
 //Slumpa ut något av dem
 var valtOrd = ordlista[Math.floor(Math.random()*3)];
-
+var point = 0;
 console.log(valtOrd);
 //Hämta knappen
 var button = document.getElementsByTagName("button")[0]; 
@@ -24,7 +24,12 @@ button.addEventListener("click", function() {
       }    
     }
 //console.log(anvandarOrd);
-//console.log(valtOrd);    
+//console.log(valtOrd);   
+    
+    if(valtOrd === anvandarOrd) {
+        alert("Du vann! " + point);
+        point += 5000;
+    }
 });
 
 
